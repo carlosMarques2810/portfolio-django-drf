@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4" defer></script>
+    <script src="{% static 'js/scripts.js' %}" defer type="module"></script>
+    <title>Portifólio</title>
+</head>
+<body class="font-sans bg-[#DAD7CD] text-gray-900">
+    {% block body %} {% endblock %}
+</body>
+</html>

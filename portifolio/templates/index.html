@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% block body %}
+    <header class="fixed top-0 left-0 w-full bg-[#344E41] text-white z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+            <h1 class="text-lg md:text-xl font-bold">@CM514380</h1>
+            <nav>
+                <ul class="hidden md:flex gap-6">
+                    <li><a class="hover:text-[#A3B18A]" href="#bio">Sobre min</a></li>
+                    <li><a class="hover:text-[#A3B18A]" href="#projetos">Projetos</a></li>
+                    <li><a class="hover:text-[#A3B18A]" href="https://linktr.ee/cm514380" target="_blank">Contato</a></li>
+                </ul>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="focus:outline-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        <div id="menu" class="hidden flex-col bg-[#3A5A40] md:hidden px-6 py-4 space-y-4">
+            <a href="#bio" class="block hover:text-[#A3B18A]">Sobre min</a>
+            <a href="#projetos" class="block hover:text-[#A3B18A]">Projetos</a>
+            <a href="#contato" class="block hover:text-[#A3B18A]">Contato</a>
+        </div>
+    </header>
+    <main>
+        <!-- Bio section -->
+        <section id="bio" class="min-h-screen flex flex-col justify-center items-center bg-[#A3B18A] pt-24 px-4 text-center">
+            <div class="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 pb-4 gap-12 items-center">
+                <div class="text-center md:text-left space-y-4">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-4 text-[#344E41]">
+                        Olá, estudade do 4/5 de ADS.
+                    </h2>
+                    <p class="max-w-2xl text-base md:text-lg text-[#344E41] indent-8">
+                        Atualmente estudo <strong>progrmação web </strong> e sigo focado no <strong>back-end com python</strong>.
+                        Gosto de usar o <strong>Django</strong> para criar aplicações e o <strong>DRF </strong>para desenvolver <strong>APIs REST</strong>,
+                        explorando autenticação com <strong>JWT</strong>. Também tenho conhecimento base da triade do front-end - <strong>HTML, CSS e javascript</strong> -
+                        o sulficiente para entender como o front conversa com o back.
+                    </p>
+                    <p class="max-w-2xl text-base md:text-lg text-[#344E41] indent-8">
+                        Além disso venho me aprofundando em armazenamento de dados relacionas e não relacionais, SQL e NoSQl, controle de versão com git e github e processsos de desenvolviemnto de software.
+                    </p>
+                </div>
+                <div class="md:pl-12 md:border-l-2 md:border-[#344E41]">
+                    <!-- <h2 class="text-3xl md:text-5xl font-bold text-[#344E41] text-center md:text-left mb-6">Tecnologias</h2> -->
+                    <div class="grid gap-6 sm:grid-cols-2">
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/python.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">Back-end</p>
+                                <p class="text-sm text-[#344E41]">APIs e regras de negócio com python.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/django.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">Framework web</p>
+                                <p class="text-sm text-[#344E41]">Desenvolvimento de sitemas web completos com Django.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/drf.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">APIs Rest</p>
+                                <p class="text-sm text-[#344E41]">Criação de APIs rest com autenticação, validação e persistência.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/jwt.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">Autenticação</p>
+                                <p class="text-sm text-[#344E41]">Login, recuperação de senha e JWT/sessão.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/database.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">SQL - NoSQL</p>
+                                <p class="text-sm text-[#344E41]">Consultas, modelagem e uso de banco de dados relacionas e não relacionas.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4 p-4 bg-[#DAD7CD] rounded-xl shadow min-w-[250px]">
+                            <img src="/api/media/profile/git.svg" alt="python" class="w-18 h-18">
+                            <div>
+                                <p class="font-semibold text-[#344E41] text-lg">Versionamento</p>
+                                <p class="text-sm text-[#344E41]">Git/GitHub para controle de versão de códiago.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project section -->
+        <section id="projetos" class="min-h-screen flex flex-col justify-center items-center bg-[#588157] pt-20 px-6 text-center text-white">
+           <!-- Conteiner dos projetos que são rederizados de forma dinâmica pelo javascript -->
+            <div id="loading" class="hidden border-[10px] border-[#344E41] border-l-[#A3B18A] w-20 h-20 rounded-full animate-spin"></div>
+            <div id="container_projects">
+                <div id="projects_box" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl sm:w-full lg:w-screen items-center"></div>
+                <div class="flex justify-between items-center gap-4 mt-10 w-full pb-4">
+                    <button id="btn_prev" class="bg-[#3A5A40] rounded-[999999px] text-center hover:bg-[#344E41] cursor-pointer disabled:bg-[#A3B18A]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                        </svg>
+                    </button>
+                    <button id="btn_next" class="bg-[#3A5A40] rounded-[999999px] text-center hover:bg-[#344E41] cursor-pointer disabled:bg-[#A3B18A]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#344E41] text-white text-center py-6">
+        <p>&copy; 2025 - Desenvolvido por Carlos Marques</p>
+    </footer>
+{% endblock %}
