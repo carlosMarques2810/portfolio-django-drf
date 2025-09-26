@@ -32,7 +32,7 @@ class Project(models.Model):
         self.image = InMemoryUploadedFile(
             output,
             'ImageField',
-            f'{self.image.name.split('.')[0]}.webp',
+            f'{self.image.name.split(".")[0]}.webp',
             'image/webp', 
             sys.getsizeof(output),
             None
