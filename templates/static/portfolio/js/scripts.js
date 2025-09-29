@@ -16,7 +16,12 @@ const btn_next = document.getElementById('btn_next')
 document.addEventListener('DOMContentLoaded', () => {
     sessionStorage.setItem('page', '1')
     render_projects(projects)   
+
+    if (Number(sessionStorage.getItem('pages')) < 2) 
+        btn_next.setAttribute('disabled', true)
+
     btn_prev.setAttribute('disabled', true)
+
 })
 
 btn_prev.addEventListener('click', ({currentTarget}) => {

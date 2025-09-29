@@ -11,12 +11,12 @@ function create_project(img_url, title, descripton, github_url) {
     const  a = document.createElement('a')
 
     // Adição de estilos.
-    div_container.className += "bg-[#3A5A40] roundedxl-xl shadow-lg p-6 overflow-hidden flex flex-col space-y-4 w-full"
+    div_container.className += "bg-[#3A5A40] rounded-xl shadow-lg p-6 overflow-hidden flex flex-col space-y-4 w-full"
     div_descriptions.className += "flex flex-col flex-1 space-y-4 w-full"
     img.className += "w-full h-40 object-cover"
     h3.className += "text-xl font-bold mb-2"
-    p.className += "text-sm text-grey-200 flex-1"
-    a.className += "inline-block py-2 font-semibold text-white bg-[#588157] roundend-lg shadow-sm hover:bg-[#3A5A40] hover:shadow-[#588157] focus:outiline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors duration-300"
+    p.className += "text-sm text-gray-200 flex-1"
+    a.className += "inline-block py-2 font-semibold text-white bg-[#588157] rounded-lg shadow-sm hover:bg-[#3A5A40] hover:shadow-[#588157] focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors duration-300"
 
     // Adição de atributos.
     img.src = img_url
