@@ -36,8 +36,6 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 
 ### 🚀 Como Executar o Projeto Localmente
 
-### 🚀 Como Executar o Projeto Localmente
-
 Siga os passos abaixo para rodar o projeto em sua máquina.
 
 **Pré-requisitos:**
@@ -124,4 +122,5 @@ A API de projetos pode ser acessada através dos seguintes endpoints:
 * [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/carlos-marques-a41721162/)
 * [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/carlosMarques2810)
 * ✉️ carlosmarques.2810@gmail.com
+
 
